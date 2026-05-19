@@ -13,14 +13,13 @@
 
 // ── Primary brand color ───────────────────────────────────────────────────────
 // 🎨 Change this one value to rebrand the whole app
-export const ACCENT = '#0ea5a4'           // teal — swap to your primary brand color
+export const ACCENT = '#22c55e'          // teal — swap to your primary brand color
 
 // Derived from ACCENT — adjust opacity as needed
-export const ACCENT_DIM = 'rgba(14,165,164,0.12)'
-export const ACCENT_BORDER = 'rgba(14,165,164,0.30)'
-export const ACCENT_GLOW = 'rgba(14,165,164,0.20)'
-// Text color on dark background using accent tone
-export const ACCENT_LIGHT = '#5eead4'
+export const ACCENT_DIM = 'rgba(34,197,94,0.12)'
+export const ACCENT_BORDER = 'rgba(34,197,94,0.30)'
+export const ACCENT_GLOW = 'rgba(34,197,94,0.20)'
+export const ACCENT_LIGHT = '#86efac'
 
 // ── Backgrounds ───────────────────────────────────────────────────────────────
 export const BG = '#0d0d0d'        // main app background

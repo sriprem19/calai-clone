@@ -1,85 +1,51 @@
 {
   "expo": {
-    "name": "MyApp",
-    "slug": "my-app",
+    "name": "CalAI Clone",
+    "slug": "calai-clone",
+    "scheme": "calaiclone",
     "version": "1.0.0",
     "orientation": "portrait",
-    "scheme": "myapp",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark",
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#0d0d0d"
+      "backgroundColor": "#0a0a0a"
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.yourcompany.myapp",
-      "associatedDomains": [
-        "applinks:REPLACE_WITH_YOUR_DOMAIN"
-      ]
+      "bundleIdentifier": "com.calaiclone.app"
     },
     "android": {
-      "package": "com.yourcompany.myapp",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "#0d0d0d"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0a0a"
       },
-      "permissions": [
-        "android.permission.CAMERA",
-        "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.WRITE_EXTERNAL_STORAGE"
-      ],
-      "androidStatusBar": {
-        "barStyle": "light-content",
-        "backgroundColor": "#0d0d0d",
-        "translucent": true
-      },
-      "predictiveBackGestureEnabled": false,
-      "intentFilters": [
-        {
-          "action": "VIEW",
-          "autoVerify": true,
-          "data": [
-            { "scheme": "myapp" }
-          ],
-          "category": ["BROWSABLE", "DEFAULT"]
-        }
-      ]
-    },
-    "web": {
-      "favicon": "./assets/icon.png"
+      "package": "com.calaiclone.app"
     },
     "plugins": [
       "expo-router",
-      "expo-image",
-      [
-        "expo-splash-screen",
-        {
-          "backgroundColor": "#0d0d0d",
-          "image": "./assets/splash-icon.png",
-          "imageWidth": 200
-        }
-      ],
-      "expo-secure-store",
-      "expo-localization",
       "expo-font",
       [
-        "@sentry/react-native/expo",
+        "expo-camera",
         {
-          "url": "https://sentry.io/",
-          "project": "react-native",
-          "organization": "your-org"
+          "cameraPermission": "Allow CalAI Clone to access your camera to photograph meals."
         }
       ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow CalAI Clone to access your photos to log meals."
+        }
+      ],
+      "expo-image",
+      "expo-localization",
+      "expo-secure-store",
+      "expo-web-browser",
       "@sentry/react-native"
     ],
-    "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
-      }
-    },
-    "owner": "REPLACE_WITH_YOUR_EXPO_OWNER"
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }
